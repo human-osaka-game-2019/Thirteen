@@ -1,51 +1,51 @@
-#include "Title.h"
+#include "GameScene.h"
 #include "Texture.h"
 #include "Input.h"
 
 // タイトルシーンの初期化
-void InitTitle();
+void InitGameScene();
 // タイトルシーンのメイン処理
-void MainTitle();
+void MainGameScene();
 // タイトルシーンの終了
-SceneId FinishTitle();
+SceneId FinishGameScene();
 
-SceneId Title::UpdateTitle()
+SceneId GameScene::UpdateGameScene()
 {
 	switch (scene.GetCurrentSceneStep())
 	{
 	case SceneStep::InitStep:
-		InitTitle();
+		InitGameScene();
 		break;
 	case SceneStep::MainStep:
-		MainTitle();
+		MainGameScene();
 		break;
 	case SceneStep::EndStep:
-		return FinishTitle();
+		return FinishGameScene();
 		break;
 	}
 
-	return SceneId::Title;
+	return SceneId::GameScene;
 }
 
-void Title::DrawTitle()
+void GameScene::DrawGameScene()
 {
 	// 描画処理
 
 }
 
-void InitTitle()
+void InitGameScene()
 {
 	// 描画準備
 
 }
 
-void MainTitle()
+void MainGameScene()
 {
 	// ゲーム処理
 
 }
 
-SceneId FinishTitle()
+SceneId FinishGameScene()
 {
 	// リリース開放
 
