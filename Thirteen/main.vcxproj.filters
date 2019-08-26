@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SceneF">
+      <UniqueIdentifier>{490ddad8-f3c2-4004-b24e-a8df0b3c3a47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX">
+      <UniqueIdentifier>{49338dbd-a013-4de3-b746-dc0fbdf46ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{65d3adf0-f986-40a9-bb9b-2d7fec4df533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{0fcc200b-7a42-40fa-b95a-618a201f5625}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameSystem.cpp">
+      <Filter>SceneF</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>SceneF</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScene.cpp">
+      <Filter>SceneF</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>SceneF</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameSystem.h">
+      <Filter>SceneF</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>SceneF</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>SceneF</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>SceneF</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
