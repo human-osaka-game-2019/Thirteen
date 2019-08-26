@@ -37,9 +37,16 @@
     <ClCompile Include="Window.cpp">
       <Filter>ソース ファイル\Engine</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="MainGame.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="GameClear.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOver.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+=======
     <ClCompile Include="GameClear.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
@@ -72,7 +79,41 @@
     </ClCompile>
     <ClCompile Include="Sound.cpp">
       <Filter>ソース ファイル\Engine</Filter>
+>>>>>>> ddecbd2f9c32077f741ac9dbcb1816dd0e10d61d
     </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="Result.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Meteorite.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Alian.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Beam.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Stars.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClCompile>
+=======
+    <ClCompile Include="GameScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+>>>>>>> ddecbd2f9c32077f741ac9dbcb1816dd0e10d61d
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h">
@@ -87,9 +128,13 @@
     <ClInclude Include="Window.h">
       <Filter>ソース ファイル\Engine</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="MainGame.h">
       <Filter>ソース ファイル\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="GameClear.h">
+      <Filter>ソース ファイル\Scene</Filter>
+=======
     <ClInclude Include="GameClear.h">
       <Filter>ソース ファイル\Scene</Filter>
     </ClInclude>
@@ -128,7 +173,47 @@
     </ClInclude>
     <ClInclude Include="Sound.h">
       <Filter>ソース ファイル\Engine</Filter>
+>>>>>>> ddecbd2f9c32077f741ac9dbcb1816dd0e10d61d
     </ClInclude>
+    <ClInclude Include="GameOver.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="Result.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Size.h">
+      <Filter>ソース ファイル\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec.h">
+      <Filter>ソース ファイル\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Meteorite.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Alien.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Beam.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Stars.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClInclude>
+=======
+>>>>>>> ddecbd2f9c32077f741ac9dbcb1816dd0e10d61d
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
