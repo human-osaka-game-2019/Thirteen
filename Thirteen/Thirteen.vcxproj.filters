@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Engine">
+      <UniqueIdentifier>{4076c2a8-d7b3-443f-a519-66f7987986c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object">
+      <UniqueIdentifier>{be9548bd-153e-4fd7-a4cd-45510c04d98d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{385632e6-58f5-4d1e-94e1-77422069f56a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Texture">
+      <UniqueIdentifier>{f2a28182-e546-4c6a-837b-3583156763b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Utility">
+      <UniqueIdentifier>{409b625a-5f9e-4906-b861-7bfeea07b44c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Alian.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Beam.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Meteorite.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Stars.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClear.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Result.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSwitch.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>ソース ファイル\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Alian.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Beam.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Meteorite.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Stars.h">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClear.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSwitch.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Size.h">
+      <Filter>ソース ファイル\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec.h">
+      <Filter>ソース ファイル\Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
