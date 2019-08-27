@@ -1,5 +1,5 @@
-#ifndef DRAW_H
-#define DRAW_H
+#ifndef Texture_H
+#define Texture_H
 
 #include <d3d9.h>
 #include <d3dx9.h>
@@ -21,33 +21,15 @@ typedef struct
 		tv;	// çÇÇ≥
 } CUSTOMVERTEX, * P_CUSTOMVERTEX;
 
-class MapChipData
+
+
+class Texture
 {
 public:
-	const int Map_HeightNumber = 10;
-	const int Map_WidhtNumber = 10;
 
-	float MapChipHeight;
-	float MapChipWidht;
-	void InputChipSize(int Height, int Widht)
-	{
-		MapChipHeight = Height;
-		MapChipWidht = Widht;
-	}
-
-	float Texture_Height;
-	float Texture_Widht;
-	void InputTextureSize(int Height, int Widht)
-	{
-		Texture_Height = Height;
-		Texture_Widht = Widht;
-	}
-
-	float x;
-	float y;
-	float chip_x;
-	float chip_y;
+	void LoadTexture(const char* file_name, int SelectScene, int  SelectTexture);
 };
 
-#endif // !DRAW_H
+
+#endif // !TEXTURE_H
 
