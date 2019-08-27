@@ -18,6 +18,8 @@ enum SceneStep
 	EndStep
 };
 
+const int MAXSCENE (SceneId::SceneIdMax);
+
 class Scene
 {
 public:

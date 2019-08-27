@@ -176,6 +176,7 @@
     <ClInclude Include="Meteorite.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Result.h" />
+    <ClInclude Include="SceneSwitch.h" />
     <ClInclude Include="Size.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="Stars.h" />
