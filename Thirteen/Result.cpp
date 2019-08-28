@@ -9,6 +9,8 @@ void MainResult();
 // タイトルシーンの終了
 SceneId FinishResult();
 
+static class Result result;
+
 SceneId Result::UpdateResult()
 {
 	switch (scene.GetCurrentSceneStep())
@@ -37,17 +39,21 @@ void InitResult()
 {
 	// 描画準備
 
+	result.scene.ChangeSceneStep(SceneStep::MainStep);
 }
 
 void MainResult()
 {
 	// ゲーム処理
 
+
+	result.scene.ChangeSceneStep(SceneStep::EndStep);
 }
 
 SceneId FinishResult()
 {
 	// リリース開放
+
 
 	return SceneId::Title;
 }

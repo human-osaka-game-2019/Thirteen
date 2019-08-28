@@ -9,6 +9,8 @@ void MainGameClear();
 // タイトルシーンの終了
 SceneId FinishGameClear();
 
+static class GameClear gameClear;
+
 SceneId GameClear::UpdateGameClear()
 {
 	switch (scene.GetCurrentSceneStep())
@@ -37,12 +39,16 @@ void InitGameClear()
 {
 	// 描画準備
 
+
+	gameClear.scene.ChangeSceneStep(SceneStep::MainStep);
 }
 
 void MainGameClear()
 {
 	// ゲーム処理
 
+
+	gameClear.scene.ChangeSceneStep(SceneStep::EndStep);
 }
 
 SceneId FinishGameClear()

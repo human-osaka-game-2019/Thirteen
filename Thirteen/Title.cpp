@@ -9,6 +9,8 @@ void MainTitle();
 // タイトルシーンの終了
 SceneId FinishTitle();
 
+static class Title title;
+
 SceneId Title::UpdateTitle()
 {
 	switch (scene.GetCurrentSceneStep())
@@ -37,12 +39,16 @@ void InitTitle()
 {
 	// 描画準備
 
+
+	title.scene.ChangeSceneStep(SceneStep::MainStep);
 }
 
 void MainTitle()
 {
 	// ゲーム処理
 
+
+	title.scene.ChangeSceneStep(SceneStep::EndStep);
 }
 
 SceneId FinishTitle()
