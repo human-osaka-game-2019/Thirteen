@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef TITLE_H_
 #define TITLE_H_
 

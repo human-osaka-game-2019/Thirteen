@@ -1,12 +1,12 @@
-#include "GameScene.h"
+ï»¿#include "GameScene.h"
 #include "Texture.h"
 #include "Input.h"
 
-// ƒ^ƒCƒgƒ‹ƒV[ƒ“‚Ì‰Šú‰»
+// ã‚¿ã‚¤ãƒˆãƒ«ã‚·ãƒ¼ãƒ³ã®åˆæœŸåŒ–
 void InitGameScene();
-// ƒ^ƒCƒgƒ‹ƒV[ƒ“‚ÌƒƒCƒ“ˆ—
+// ã‚¿ã‚¤ãƒˆãƒ«ã‚·ãƒ¼ãƒ³ã®ãƒ¡ã‚¤ãƒ³å‡¦ç†
 void MainGameScene();
-// ƒ^ƒCƒgƒ‹ƒV[ƒ“‚ÌI—¹
+// ã‚¿ã‚¤ãƒˆãƒ«ã‚·ãƒ¼ãƒ³ã®çµ‚äº†
 SceneId FinishGameScene();
 
 static class GameScene gameScene;
@@ -31,13 +31,13 @@ SceneId GameScene::UpdateGameScene()
 
 void GameScene::DrawGameScene()
 {
-	// •`‰æˆ—
+	// æç”»å‡¦ç†
 
 }
 
 void InitGameScene()
 {
-	// •`‰æ€”õ
+	// æç”»æº–å‚™
 
 
 	gameScene.scene.ChangeSceneStep(SceneStep::MainStep);
@@ -45,7 +45,7 @@ void InitGameScene()
 
 void MainGameScene()
 {
-	// ƒQ[ƒ€ˆ—
+	// ã‚²ãƒ¼ãƒ å‡¦ç†
 
 
 	gameScene.scene.ChangeSceneStep(SceneStep::EndStep);
@@ -53,7 +53,7 @@ void MainGameScene()
 
 SceneId FinishGameScene()
 {
-	// ƒŠƒŠ[ƒXŠJ•ú
+	// ãƒªãƒªãƒ¼ã‚¹é–‹æ”¾
 
 
 	return SceneId::GameClear;

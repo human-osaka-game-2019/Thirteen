@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef RESULT_H_
 #define RESULT_H_
 
