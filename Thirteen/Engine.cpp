@@ -1,6 +1,7 @@
 #include "Window.h"
 #include <Windows.h>
 #include "Engine.h"
+#include "Sound.h"
 
 //@ƒGƒ“ƒWƒ“‚Ì‰Šú‰»
 BOOL InitEngine(int width, int height, HINSTANCE hInst)
