@@ -1,5 +1,5 @@
-﻿#ifndef MapChipData_H
-#define MapChipData_H
+﻿#ifndef MAP_CHIP_DATA_H
+#define MAP_CHIP_DATA_H
 
 class MapChipData
 {
@@ -8,9 +8,9 @@ public:
 	const int Map_WidthNumber = 10;
 
 	// マップチップの大きさ
-	void InputMapChipSize(float Height, float Width);
+	void SetMapChipSize(float Height, float Width);
 
-	void InputTextureSize(float Height, float Width);
+	void SetTextureSize(float Height, float Width);
 
 	float x;
 	float y;
@@ -25,4 +25,4 @@ private:
 	float MapChipWidth;
 };
 
-#endif // !1
+#endif // !MAP_CHIP_DATA

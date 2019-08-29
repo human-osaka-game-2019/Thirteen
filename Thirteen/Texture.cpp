@@ -19,13 +19,13 @@ struct TEXTUREDATA
 
 };
 
-void MapChipData::InputMapChipSize(float Height, float Width)
+void MapChipData::SetMapChipSize(float Height, float Width)
 {
 	MapChipHeight = Height;
 	MapChipWidth = Width;
 }
 
-void MapChipData::InputTextureSize(float Height, float Width)
+void MapChipData::SetTextureSize(float Height, float Width)
 {
 	Texture_Height = Height;
 	Texture_Width = Width;

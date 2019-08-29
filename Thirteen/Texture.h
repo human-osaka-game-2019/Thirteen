@@ -1,5 +1,5 @@
-#ifndef Texture_H
-#define Texture_H
+#ifndef TEXTURE_H
+#define TEXTURE_H
 
 #include <d3d9.h>
 #include <d3dx9.h>
