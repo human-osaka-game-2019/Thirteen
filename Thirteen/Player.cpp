@@ -10,14 +10,14 @@ void Player::m_PlayerMove(Player* player, int MapChipList[][28])
 		switch (player->m_key_check)
 		{
 		case 1: // ‰ºˆÚ“®
-			if (player->row + 1 <= 19 || MapChipList[row + 1][col] == 3)
+			if (player->row + 1 <= 19 || MapChipList[row + 1][col] != 3)
 			{
 				player->y += player->m_speed;
 				player->m_moving_distance += player->m_speed;
 			}
 			break;
 		case 2: // ãˆÚ“®
-			if (player->row - 1 >= 0 || MapChipList[row - 1][col] == 3)
+			if (player->row - 1 >= 0 || MapChipList[row - 1][col] != 3)
 			{
 				player->y -= player->m_speed;
 				player->m_moving_distance += player->m_speed;
@@ -72,6 +72,12 @@ void Bullet::m_FireBullet(Bullet* bullet)
 {
 	bullet->m_frame_count++;
 
+	if (bullet->y > 840.0f || bullet->y < 80.0f || bullet->x < 80.0f || bullet->x > 1160)
+	{
+		bullet->m_key_check = 0;
+		bullet->key_push_flag = false;
+	}
+
 	if (bullet->m_frame_count >= 10)
 	{
 		switch (bullet->m_key_check)
@@ -92,10 +98,5 @@ void Bullet::m_FireBullet(Bullet* bullet)
 
 		bullet->m_frame_count = 0;
 
-		if (bullet->y > 800.0f || bullet->y < 0.0f || bullet->x < 0.0f || bullet->x >1120)
-		{
-			bullet->m_key_check = 0;
-			bullet->key_push_flag = false;
-		}
 	}
 }
