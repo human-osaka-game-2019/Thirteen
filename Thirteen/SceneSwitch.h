@@ -18,24 +18,22 @@ enum SceneStep
 	EndStep
 };
 
-const int MAXSCENE (SceneId::SceneIdMax);
-
 class Scene
 {
 public:
-	// ƒV[ƒ“IDæ“¾ŠÖ”
+	// ã‚·ãƒ¼ãƒ³IDå–å¾—é–¢æ•°
 	SceneId GetCurrentSceneId();
 
-	// ƒV[ƒ“ƒXƒeƒbƒvæ“¾ŠÖ”
+	// ã‚·ãƒ¼ãƒ³ã‚¹ãƒ†ãƒƒãƒ—å–å¾—é–¢æ•°
 	SceneStep GetCurrentSceneStep();
 
-	// w’è‚µ‚½ƒXƒeƒbƒv‚ÉØ‚è‘Ö‚¦‚é
+	// æŒ‡å®šã—ãŸã‚¹ãƒ†ãƒƒãƒ—ã«åˆ‡ã‚Šæ›¿ãˆã‚‹
 	void ChangeSceneStep(SceneStep next_step);
 
-	// ƒV[ƒ“ˆ—‚ÌÀs
+	// ã‚·ãƒ¼ãƒ³å‡¦ç†ã®å®Ÿè¡Œ
 	void UpdateScene();
 
-	// ƒV[ƒ“ƒIƒuƒWƒFƒNƒg‚Ì•`‰æ
+	// ã‚·ãƒ¼ãƒ³ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æç”»
 	void DrawScene();
 };
 

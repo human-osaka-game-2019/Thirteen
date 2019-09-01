@@ -1,81 +1,74 @@
+#ifndef SOUND_H_
+#define SOUND_H_
+
 #include <SoundsManager.h>
 #include <tchar.h>
 
-SoundLib::SoundsManager soundsManager;
+SoundLib::SoundsManager m_soundsManager;
 
 
-// ‰Šú‰»
-// SoundsManagerƒCƒ“ƒXƒ^ƒ“ƒX¶¬Œã‚É1“x‚Ì‚İs‚¤B
-
-
-bool isSuccess = soundsManager.Initialize();
-
-
-// ‰¹ºƒtƒ@ƒCƒ‹ƒI[ƒvƒ“
-// ‘æ2ˆø”‚Í‰¹ºƒtƒ@ƒCƒ‹‚ğ¯•Ê‚·‚é‚½‚ß‚Ì”CˆÓ‚Ì•¶š—ñ‚ğƒL[‚Æ‚µ‚Äw’è‚·‚éB
-// ‚±‚ÌŒã‚Ì‘€ìŠÖ”‚ÌŒÄ‚Ño‚µ‚É‚ÍA‚±‚±‚Åİ’è‚µ‚½ƒL[‚ğw’è‚µ‚Ä‰¹º‚ğ¯•Ê‚·‚éB
-
-const TCHAR* filePath = _T("‰¹Šyƒtƒ@ƒCƒ‹");
-isSuccess = soundsManager.AddFile(filePath, _T("bgm"));
-
-
-
-// “ª‚©‚çÄ¶
-// ˆê’â~’†‚Ì‰¹º‚É‘Î‚µ‚Ä“–ŠÖ”‚ğÀs‚µ‚½ê‡‚à“ª‚©‚ç‚ÌÄ¶‚Æ‚È‚éB
-// ‘æ2ˆø”‚Étrue‚ğ“n‚·‚Æƒ‹[ƒvÄ¶‚É‚È‚éB
-isSuccess = soundsManager.Start(_T("bgm"), true);
-
-// ˆê’â~
-isSuccess = soundsManager.Pause(_T("bgm"));
-
-// ˆê’â~’†‚Ì‰¹º‚ğ‘±‚«‚©‚çÄ¶
-isSuccess = soundsManager.Resume(_T("bgm"));
-
-// Ä¶’â~
-isSuccess = soundsManager.Stop(_T("bgm"));
-
-// Ä¶ó‘Ô‚ğæ“¾
-SoundLib::PlayingStatus status = soundsManager.GetStatus(_T("bgm"));
-
-
-/// <summary>
-/// Ä¶ó‹µ‚ğ¦‚·ƒXƒe[ƒ^ƒX
-/// </summary>
-enum PlayingStatus {
-	/// <summary>’â~’†</summary>
-	Stopped,
-	/// <summary>Ä¶’†</summary>
-	Playing,
-	/// <summary>ˆê’â~’†</summary>
-	Pausing
+enum SoundType {
+	TYPE_NONE,
+	BGM,
+	SE
 };
 
+struct SoundKey{
+
+	const char* Key;
+
+	SoundType Type;
+
+};
+
+// åˆæœŸåŒ–
+// SoundsManagerã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆå¾Œã«1åº¦ã®ã¿è¡Œã†ã€‚
 
 
-//@ƒ{ƒŠƒ…[ƒ€•ÏX
-// 0(–³‰¹)`100(Œ´‰¹—Ê)‚ÌŠÔ‚Åİ’è‰Â”\
-soundsManager.SetVolume(_T("bgm"), 50);
-
-// ƒ{ƒŠƒ…[ƒ€æ“¾
-uint8_t volume = soundsManager.GetVolume(_T("bgm"));
+bool isSuccess = m_soundsManager.Initialize();
 
 
+class SoundPlay
+{
 
-// Ä¶‘¬“xEƒsƒbƒ`•ÏX
-isSuccess = soundsManager.SetFrequencyRatio(_T("bgm"), 1.0f);
-
-// Ä¶‘¬“xEƒsƒbƒ`æ“¾
-float ratio = soundsManager.GetFrequencyRatio(_T("bgm"));
-
-
-
-class Foo {
 public:
+
+	bool SoundState();
+
+};
+
+class SoundVolume
+{
+
+public:
+
+	bool VolumeSet();
+
+};
+
+class SoundPitch 
+{
+
+public:
+
+	float SoundRatio();
+
+};
+
+class Foo 
+{
+
+public:
+
 	void Play() {
-		bool isSuccess = soundsManager.Start(_T("bgm"), this);
+		bool isSuccess = m_soundsManager.Start(_T("bgm"), this);
 	}
 
 	void OnPlayedToEnd(std::basic_string<TCHAR> key) {
-		// Ä¶I—¹Œã‚És‚¤ˆ—
-	}
+		// å†ç”Ÿçµ‚äº†å¾Œã«è¡Œã†å‡¦ç†
+  }
+  
 };
+
+#endif
+
