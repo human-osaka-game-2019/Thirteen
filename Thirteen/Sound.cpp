@@ -17,18 +17,18 @@ bool SoundPlay::SoundState()
 
 }
 
-// Ä¶ó‘Ô‚ğæ“¾
+// ï¿½Äï¿½ï¿½ï¿½Ô‚ï¿½æ“¾
 SoundLib::PlayingStatus status = m_soundsManager.GetStatus(_T("bgm"));
 
-/// Ä¶ó‹µ‚ğ¦‚·ƒXƒe[ƒ^ƒX
+/// ï¿½Äï¿½ï¿½ó‹µ‚ï¿½ï¿½ï¿½Xï¿½eï¿½[ï¿½^ï¿½X
 enum SoundStatus 
 {
 
-	/// <summary>’â~’†</summary>
+	/// <summary>ï¿½ï¿½~ï¿½ï¿½</summary>
 	Stopped,
-	/// <summary>Ä¶’†</summary>
+	/// <summary>ï¿½Äï¿½ï¿½ï¿½</summary>
 	Playing,
-	/// <summary>ˆê’â~’†</summary>
+	/// <summary>ï¿½êï¿½ï¿½~ï¿½ï¿½</summary>
 	Pausing
 
 };
@@ -37,10 +37,10 @@ enum SoundStatus
 bool SoundVolume::VolumeSet()
 {
 
-	//Volume Setting ( 0(–³‰¹) ~ 100(Œ´‰¹—Ê) )
+	//Volume Setting ( 0(ï¿½ï¿½ï¿½ï¿½) ~ 100(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) )
 	m_soundsManager.SetVolume(_T("bgm"), 50);
 
-	//Volume î•ñû“¾
+	//Volume ï¿½ï¿½ï¿½ï¿½
 	m_soundsManager.GetVolume(_T("bgm"));
 
 	return 0;
@@ -50,14 +50,13 @@ bool SoundVolume::VolumeSet()
 float SoundPitch::SoundRatio()
 {
 
-	//Sound Speed ’²ß
+	//Sound Speed ï¿½ï¿½ï¿½ï¿½
 	m_soundsManager.SetFrequencyRatio(_T("bgm"), 1.0f);
 
-	//Sound Speed û“¾
+	//Sound Speed ï¿½ï¿½
 	m_soundsManager.GetFrequencyRatio(_T("bgm"));
 
 	return 0;
 
 }
-
 

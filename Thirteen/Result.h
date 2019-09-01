@@ -1,4 +1,4 @@
-﻿#ifndef RESULT_H_
+#ifndef RESULT_H_
 #define RESULT_H_
 
 #include "SceneSwitch.h"

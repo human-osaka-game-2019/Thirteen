@@ -3,7 +3,8 @@
 #include "Engine.h"
 #include "Sound.h"
 
-//@ƒGƒ“ƒWƒ“‚Ì‰Šú‰»
+
+//ã€€ã‚¨ãƒ³ã‚¸ãƒ³ã®åˆæœŸåŒ–
 BOOL InitEngine(int width, int height, HINSTANCE hInst)
 {
 	HWND hWnd;
@@ -17,7 +18,7 @@ BOOL InitEngine(int width, int height, HINSTANCE hInst)
 	return TRUE;
 }
 
-//@ƒƒ‚ƒŠ‚ğŠJ•ú‚·‚é
+//ã€€ãƒ¡ãƒ¢ãƒªã‚’é–‹æ”¾ã™ã‚‹
 VOID EndEngine()
 {
 

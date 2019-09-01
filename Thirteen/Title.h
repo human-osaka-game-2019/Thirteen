@@ -1,4 +1,4 @@
-﻿#ifndef TITLE_H_
+#ifndef TITLE_H_
 #define TITLE_H_
 
 #include "SceneSwitch.h"

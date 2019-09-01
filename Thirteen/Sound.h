@@ -21,8 +21,8 @@ struct SoundKey{
 
 };
 
-// ‰Šú‰»
-// SoundsManagerƒCƒ“ƒXƒ^ƒ“ƒX¶¬Œã‚É1“x‚Ì‚İs‚¤B
+// åˆæœŸåŒ–
+// SoundsManagerã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆå¾Œã«1åº¦ã®ã¿è¡Œã†ã€‚
 
 
 bool isSuccess = m_soundsManager.Initialize();
@@ -65,8 +65,10 @@ public:
 	}
 
 	void OnPlayedToEnd(std::basic_string<TCHAR> key) {
-		// Ä¶I—¹Œã‚És‚¤ˆ—
-	}
+		// å†ç”Ÿçµ‚äº†å¾Œã«è¡Œã†å‡¦ç†
+  }
+  
 };
 
 #endif
+
