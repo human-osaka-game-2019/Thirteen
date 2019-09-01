@@ -129,6 +129,12 @@
     <ClInclude Include="Sound.h">
       <Filter>ソース ファイル\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="SceneSwitch.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MapchipData.h">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
