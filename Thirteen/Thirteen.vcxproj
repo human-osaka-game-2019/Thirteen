@@ -148,7 +148,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Alian.cpp" />
+    <ClCompile Include="Alien.cpp" />
     <ClCompile Include="Beam.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="GameClear.cpp" />
