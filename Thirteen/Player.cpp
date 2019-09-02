@@ -1,68 +1,68 @@
-#include "Player.h"
+#include "player.h"
 
 // プレイヤーの移動
-void Player::m_PlayerMove(Player* player, int MapChipList[][28])
+void Player::m_PlayerMove(Player* p_player, int mapChipList[][28])
 {
-	player->m_frame_count++;
+	p_player->m_frame_count++;
 
-	if (player->m_frame_count >= 10)
+	if (p_player->m_frame_count >= 10)
 	{
-		switch (player->m_key_check)
+		switch (p_player->m_key_check)
 		{
 		case 1: // 下移動
-			if (player->row + 1 <= 19 || MapChipList[row + 1][col] != 3)
+			if (p_player->row + 1 <= 19 || mapChipList[row + 1][col] != 3)
 			{
-				player->y += player->m_speed;
-				player->m_moving_distance += player->m_speed;
+				p_player->y += p_player->m_speed;
+				p_player->m_moving_distance += p_player->m_speed;
 			}
 			break;
 		case 2: // 上移動
-			if (player->row - 1 >= 0 || MapChipList[row - 1][col] != 3)
+			if (p_player->row - 1 >= 0 || mapChipList[row - 1][col] != 3)
 			{
-				player->y -= player->m_speed;
-				player->m_moving_distance += player->m_speed;
+				p_player->y -= p_player->m_speed;
+				p_player->m_moving_distance += p_player->m_speed;
 			}
 			break;
 		case 3: // 左移動
-			if (player->col - 1 >= 0 || MapChipList[row][col - 1] != 3)
+			if (p_player->col - 1 >= 0 || mapChipList[row][col - 1] != 3)
 			{
-				player->x -= player->m_speed;
-				player->m_moving_distance += player->m_speed;
+				p_player->x -= p_player->m_speed;
+				p_player->m_moving_distance += p_player->m_speed;
 			}
 			break;
 		case 4: // 右移動
-			if (player->col + 1 <= 27 || MapChipList[row][col + 1] != 3)
+			if (p_player->col + 1 <= 27 || mapChipList[row][col + 1] != 3)
 			{
-				player->x += player->m_speed;
-				player->m_moving_distance += player->m_speed;
+				p_player->x += p_player->m_speed;
+				p_player->m_moving_distance += p_player->m_speed;
 			}
 			break;
 		}
 
-		player->m_frame_count = 0;
+		p_player->m_frame_count = 0;
 
-		if (player->m_moving_distance >= 40)
+		if (p_player->m_moving_distance >= 40)
 		{
 			// マップチップの二次元配列の更新
-			switch (player->m_key_check)
+			switch (p_player->m_key_check)
 			{
 			case 1: // 下移動
-				player->row++;
+				p_player->row++;
 				break;
 			case 2: // 上移動
-				player->row--;
+				p_player->row--;
 				break;
 			case 3: // 左移動
-				player->col--;
+				p_player->col--;
 				break;
 			case 4: // 右移動
-				player->col++;
+				p_player->col++;
 				break;
 			}
 
-			player->m_moving_distance = 0.0f;
-			player->key_push_flag = false;
-			player->m_key_check = 0;
+			p_player->m_moving_distance = 0.0f;
+			p_player->key_push_flag = false;
+			p_player->m_key_check = 0;
 		}
 	}
 }

@@ -11,7 +11,7 @@ public:
 	int m_frame_count;
 	int m_key_check;
 	bool key_push_flag;
-	void m_PlayerMove(Player* player, int MapChipList[][28]);
+	void m_PlayerMove(Player* p_player, int mapChipList[][28]);
 };
 
 class Bullet
